@@ -1,0 +1,17 @@
+Package: puny
+Title: punycode encoder/decoder
+Version: 0.0.0.9000
+Authors@R: c(
+  person("Romain", "Francois", email = "romain@purrple.cat", role = c("aut", "cre")), 
+  person("Ben", "Noordhuis", email = "info@bnoordhuis.nl", role = "aut", comment = "punycode library" )
+  )
+Description: Encoder and decoder for the punycode format.
+Depends: R (>= 3.4.3)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Roxygen: list(markdown = TRUE)
+Imports: 
+    stringi
+Suggests: emo
