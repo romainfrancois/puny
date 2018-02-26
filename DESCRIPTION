@@ -6,7 +6,8 @@ Authors@R: c(
   person("Ben", "Noordhuis", email = "info@bnoordhuis.nl", role = "aut", comment = "punycode library" )
   )
 Description: Encoder and decoder for the punycode format.
-Depends: R (>= 3.4.3)
+Depends: 
+    R (>= 3.1)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -14,4 +15,6 @@ RoxygenNote: 6.0.1
 Roxygen: list(markdown = TRUE)
 Imports: 
     stringi
-Suggests: emo
+Suggests: 
+    emo,
+    covr
