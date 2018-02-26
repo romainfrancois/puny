@@ -4,14 +4,20 @@
 \alias{decode}
 \title{punycode decoder}
 \usage{
-decode(s)
+decode(s, domain = FALSE)
 }
 \arguments{
 \item{s}{a character vector}
+
+\item{domain}{if \code{TRUE} the prefix \code{"xn--"} is trimmed from the decoded string}
 }
 \value{
 a utf-8 string decoded from \code{s}
 }
 \description{
 Decodes a string encoded in \href{https://en.wikipedia.org/wiki/Punycode}{punycode}
+}
+\examples{
+decode( "crme brle-13ar8s" )
+
 }

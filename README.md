@@ -32,6 +32,14 @@ puny::code( s )
 #> [1] "emoji  also work-s509o"
 ```
 
+Decoding punycode
+-----------------
+
+``` r
+puny::decode( "crme brle-13ar8s" )
+#> [1] "crème brûlée"
+```
+
 Code of Conduct
 ---------------
 

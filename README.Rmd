@@ -41,6 +41,12 @@ puny::code( "crème brûlée" )
 puny::code( s )
 ```
 
+## Decoding punycode
+
+```{r}
+puny::decode( "crme brle-13ar8s" )
+```
+
 
 ## Code of Conduct
 

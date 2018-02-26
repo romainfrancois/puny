@@ -36,12 +36,21 @@ code <- function(s, domain = FALSE){
 #' Decodes a string encoded in [punycode](https://en.wikipedia.org/wiki/Punycode)
 #'
 #' @param s a character vector
+#' @param domain if `TRUE` the prefix `"xn--"` is trimmed from the decoded string
+#'
 #' @return a utf-8 string decoded from `s`
+#'
+#' @examples
+#' decode( "crme brle-13ar8s" )
 #'
 #' @importFrom stringi stri_enc_fromutf32
 #' @export
-decode <- function(s){
-  stri_enc_fromutf32(
+decode <- function(s, domain = FALSE){
+  res <- stri_enc_fromutf32(
     .Call( puny_decode, s)
   )
+  if( isTRUE(domain) ){
+    res <- gsub("^xn[-][-]", "", res)
+  }
+  res
 }
