@@ -1,5 +1,8 @@
 #' punycode encoder
 #'
+#' Encodes a character vector in the [punicode](https://en.wikipedia.org/wiki/Punycode)
+#' format
+#'
 #' @param s a character vector
 #' @param domain if `TRUE` the prefix `xn--` is added to the output
 #'
@@ -26,4 +29,19 @@ code <- function(s, domain = FALSE){
     res <- paste0("xn--", res)
   }
   res
+}
+
+#' punycode decoder
+#'
+#' Decodes a string encoded in [punycode](https://en.wikipedia.org/wiki/Punycode)
+#'
+#' @param s a character vector
+#' @return a utf-8 string decoded from `s`
+#'
+#' @importFrom stringi stri_enc_fromutf32
+#' @export
+decode <- function(s){
+  stri_enc_fromutf32(
+    .Call( puny_decode, s)
+  )
 }

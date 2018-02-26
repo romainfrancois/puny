@@ -15,7 +15,8 @@ code(s, domain = FALSE)
 s encoded in \href{https://en.wikipedia.org/wiki/Punycode}{punycode}
 }
 \description{
-punycode encoder
+Encodes a character vector in the \href{https://en.wikipedia.org/wiki/Punycode}{punicode}
+format
 }
 \examples{
 
