@@ -18,3 +18,4 @@ Imports:
 Suggests: 
     emo,
     covr
+Remotes: hadley/emo

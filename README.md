@@ -17,10 +17,8 @@ You can install the development version from [GitHub](https://github.com/) with:
 devtools::install_github("romainfrancois/puny")
 ```
 
-Example
--------
-
-This is a basic example which shows you how to solve a common problem:
+Encoding in punycode
+--------------------
 
 ``` r
 # dessert
@@ -33,3 +31,8 @@ puny::code( "crème brûlée" )
 puny::code( s )
 #> [1] "emoji  also work-s509o"
 ```
+
+Code of Conduct
+---------------
+
+Please note that this project is released with a [Contributor Code of Conduct](.github/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
