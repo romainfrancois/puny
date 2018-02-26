@@ -17,5 +17,6 @@ Imports:
     stringi
 Suggests: 
     emo,
-    covr
+    covr,
+    testthat
 Remotes: hadley/emo

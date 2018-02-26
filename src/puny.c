@@ -6,6 +6,7 @@
 
 #include "punycode.h"
 
+// encoder
 SEXP puny_encode( SEXP s ){
   char buffer[1024];
 
@@ -30,6 +31,8 @@ SEXP puny_encode( SEXP s ){
   UNPROTECT(1) ;
   return out ;
 }
+
+// decoder
 
 
 // registration
