@@ -4,10 +4,12 @@
 \alias{code}
 \title{punycode encoder}
 \usage{
-code(s)
+code(s, domain = FALSE)
 }
 \arguments{
 \item{s}{a character vector}
+
+\item{domain}{if \code{TRUE} the prefix \code{xn--} is added to the output}
 }
 \value{
 s encoded in \href{https://en.wikipedia.org/wiki/Punycode}{punycode}
